@@ -1,5 +1,5 @@
 const Profile = require("../models/Profile");
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 const { Op } = require("sequelize");
 
 const { getGithubProfileData } = require("../services/githubService");
