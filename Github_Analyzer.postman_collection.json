@@ -1,0 +1,147 @@
+{
+  "info": {
+    "_postman_id": "364204a2-c852-44f7-a9b5-bdb8b0ff3bc1",
+    "name": "Github Analyzer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29988151",
+    "_collection_link": "https://go.postman.co/collection/29988151-364204a2-c852-44f7-a9b5-bdb8b0ff3bc1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Github Profile Analyze",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/analyze/Skrpn7",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "analyze",
+            "Skrpn7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all profiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/profiles",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "profiles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all profiles with paging",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/profiles?page=1&limit=2",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "profiles"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all profiles with sorting",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/profiles?sort=followers&order=ASC",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "profiles"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "followers"
+            },
+            {
+              "key": "order",
+              "value": "ASC"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all profiles with Search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/profiles?search=Skrpn7",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "profiles"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Skrpn7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get profile By Username",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{apiuri}}/github/profiles/octocat",
+          "host": [
+            "{{apiuri}}"
+          ],
+          "path": [
+            "github",
+            "profiles",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
